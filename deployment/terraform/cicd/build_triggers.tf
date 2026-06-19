@@ -34,7 +34,7 @@ resource "google_cloudbuild_trigger" "pr_checks" {
     "tests/**",
     "deployment/**",
     "uv.lock",
-  
+    "Dockerfile"
   ]
   include_build_logs = "INCLUDE_BUILD_LOGS_WITH_STATUS"
   depends_on = [
@@ -66,7 +66,8 @@ resource "google_cloudbuild_trigger" "cd_pipeline" {
     "data_ingestion/**",
     "tests/**",
     "deployment/**",
-    "uv.lock"
+    "uv.lock",
+    "Dockerfile"
   ]
   include_build_logs = "INCLUDE_BUILD_LOGS_WITH_STATUS"
   substitutions = {
