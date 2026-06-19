@@ -44,6 +44,7 @@ logs_bucket_name = os.environ.get("LOGS_BUCKET_NAME")
 
 AGENT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Use sqlite for persistent shared storage between pubsub endpoint and dev-ui
+os.makedirs(".google-agents-cli", exist_ok=True)
 session_service_uri = "sqlite+aiosqlite:///.google-agents-cli/sessions.db"
 
 artifact_service_uri = f"gs://{logs_bucket_name}" if logs_bucket_name else None
