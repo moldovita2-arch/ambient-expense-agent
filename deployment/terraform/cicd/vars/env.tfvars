@@ -1,0 +1,11 @@
+staging_project_id = "gen-lang-client-0675989879"
+prod_project_id = "gen-lang-client-0675989879"
+cicd_runner_project_id = "gen-lang-client-0675989879"
+region = "europe-west2"
+repository_name = "ambient-expense-agent"
+repository_owner = "moldovita2-arch"
+host_connection_name = "git-ambient-expense-agent"
+create_cb_connection = true
+create_repository = false
+github_app_installation_id = "141354522"
+github_pat_secret_id = "git-ambient-expense-agent-github-oauthtoken-3f8cf3"
