@@ -73,6 +73,9 @@ Edit your agent logic in `app/agent.py` and test with `agents-cli playground` - 
 
 ## Deployment
 
+For a comprehensive breakdown of the production Cloud Run deployment, including the Zero-Trust IAM security model and service-to-service authentication setup, please read the **[Google Cloud Deployment Guide](./DEPLOYMENT.md)**.
+
+Basic CLI commands:
 ```bash
 gcloud config set project <your-project-id>
 agents-cli deploy
